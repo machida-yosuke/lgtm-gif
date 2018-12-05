@@ -1,0 +1,32 @@
+@import "../../../node_modules/reset-css/sass/reset";
+@import "variable";
+@import "function";
+@import "mixin";
+@import "keyframes";
+@import "~swiper/dist/css/swiper.css";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  touch-action: manipulation;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}

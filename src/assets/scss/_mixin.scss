@@ -1,0 +1,41 @@
+@mixin pc-layout {
+  @media (min-width: $pc_min_width) {
+    @content;
+  }
+}
+
+@mixin sp-layout {
+  @media (max-width: ($pc_min_width - 1)) {
+    @content;
+  }
+}
+
+@mixin font-head {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+@mixin font-sentence {
+  font-size: 10px;
+}
+
+@mixin set-image($url, $width, $height) {
+  width: $width;
+  height: $height;
+  background-image: image-url($url);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+@mixin hide-txt() {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+@mixin positionMiddle() {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

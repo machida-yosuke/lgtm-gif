@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "root": {
+      "datas": {
+        ".read": true,
+        ".write": true,
+        "$uid": {
+          "url": {
+            ".validate": "newData.isString()"
+          },
+          "effect": {
+            ".validate": "newData.isString()"
+          },
+          "timestamp": {
+            ".validate": "newData.isNumber()"
+          }
+        }
+      }
+    }
+  }
+}
